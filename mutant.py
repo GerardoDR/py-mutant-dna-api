@@ -13,20 +13,3 @@ def find_four_in_a_row(matrix):
                             matrix[i + 3 * dx][j + 3 * dy]):
                         return True, matrix[i][j], (i, j), d
     return False, None, None, None
-
-
-# # Usage example
-# n = 5  # Matrix size NxN
-# options = []  # Set of 4 possible options
-# matrix = generate_matrix(n, options)
-
-# # Display the matrix
-# for row in matrix:
-#     print(row)
-
-# # Check if there are four identical consecutive elements
-# found, value, position, direction = find_four_in_a_row(matrix)
-# if found:
-#     print(f"Four consecutive '{value}' elements found at position {position} in direction {direction}.")
-# else:
-#     print("No four consecutive identical elements found.")
