@@ -17,3 +17,7 @@ def isMutant():
             return make_response('Forbidden', 403)
     else:
         return make_response('BAD REQUEST', 400)
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
